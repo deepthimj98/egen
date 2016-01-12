@@ -8,10 +8,9 @@
 #reserveblock{
     max-width: 600px;
 }
-
-
 body {
     background-image: url("food.jpg");
     background-repeat: no-repeat;
+    margin-bottom: 0px;
 }
 
