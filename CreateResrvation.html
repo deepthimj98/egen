@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>guest reservation</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MY HOTEL</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Owner.html">Owner</a></li>
+                    <!--<li><a href="#">Link</a></li>-->
+                    <!--<li><a href="#">Link</a></li>-->
+
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+</header>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li ><a href="OwnerLogin.html">Home</a></li>
+        <li><a href="ViewReservation.html">View Reservation</a> </li>
+        <li><a href="CreateResrvation.html">Create Reservation</a></li>
+        <li><a href="EditReservation.html">Edit Reservation</a></li>
+        <li><a href="SeatingArea.html">Seating Area</a></li>
+    </ul>
+    <h2>RESERVATION</h2>
+    <form role="form">
+        <div class="form-group">
+            Name:
+            <input type="text" class="form-control" placeholder="Enter your name" id="name">
+        </div>
+        <div class="form-group">
+            Date:
+            <input type="date" class="form-control" id="date">
+        </div>
+        <div class="form-group">
+            Time:
+            <input type="time" class="form-control" id="time">
+        </div>
+        <div class="form-group">
+            <select name="AMPM">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        <div class="form-group">
+            Number of People:
+
+
+            <input type="number" class="form-control" min="1" max="10" placeholder="Enter number of people " id="num">
+        </div>
+        <div class="form-group">
+            Phone Number:
+            <input type="number" class="form-control" placeholder="Enter your Phone number" id="phone">
+        </div>
+        <div class="form-group">
+            Email:
+            <input type="email" class="form-control" placeholder="Email id" id="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>
